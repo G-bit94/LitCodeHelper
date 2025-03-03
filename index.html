@@ -9,5 +9,12 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- In your index.html, just before closing </body> tag -->
+    <script>
+      console.log("index.html loaded")
+      document.body.style.backgroundColor = "#1a1a1a"
+      document.body.innerHTML +=
+        '<div style="color:white;padding:20px;">Loading application...</div>'
+    </script>
   </body>
 </html>
